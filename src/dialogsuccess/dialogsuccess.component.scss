@@ -1,0 +1,20 @@
+#success {
+    color: green;
+    display: flex;
+    justify-content:center;
+    // border-color: red;
+    // border-style: solid;
+    animation: fadeInMove 1.5s none;
+}
+
+#successDialog {
+    // border-color: red;
+    // border-style: solid;
+    display: flex;
+    justify-content:center;
+}
+
+@keyframes fadeInMove {
+    from { font-size: 5px; }
+    to { font-size: 15px;}
+}

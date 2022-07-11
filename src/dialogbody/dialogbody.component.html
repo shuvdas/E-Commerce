@@ -1,0 +1,22 @@
+<div id="matDialog">
+<h2 mat-dialog-title>This is a dialog content</h2> 
+
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-title>{{ titleData }}
+    </mat-card-title><br>
+    <mat-card-content>
+    <img mat-card-image src="{{ sourceData }}" alt="Failed to Load">
+    <!-- <mat-card-content>
+      <div>This is some content</div>
+    </mat-card-content>   -->
+  </mat-card-content>
+</mat-card>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button [mat-dialog-close]="" 
+             cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
+</div>

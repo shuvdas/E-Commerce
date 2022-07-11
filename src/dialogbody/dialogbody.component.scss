@@ -1,0 +1,8 @@
+#matDialog > * {
+    animation: fadeInMove 2.5s none;
+}
+
+@keyframes fadeInMove {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

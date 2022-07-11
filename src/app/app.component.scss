@@ -1,0 +1,26 @@
+button > span {
+    background-color: blueviolet;
+}
+
+nav {
+    background: -webkit-linear-gradient(bottom, white, rgb(152, 152, 212));
+    border: none;
+    height: 2px;
+}
+
+.collapse {
+    border: none;
+}
+
+.navbar-collapse {
+    transition-duration: .8s;
+}
+
+a {
+    color: black;
+}
+
+li > a:hover {
+    background: none;
+    color: blueviolet;
+}

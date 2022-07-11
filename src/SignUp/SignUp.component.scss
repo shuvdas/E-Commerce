@@ -1,0 +1,185 @@
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px auto;
+    }
+
+    .userDiv {
+        display: flex;        
+    }
+
+    .shopDiv {
+        display: none;
+    }
+
+    .register {
+        padding: 2%;
+        background: -webkit-linear-gradient(0deg, white, rgb(152, 152, 212));
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        border-radius: 2rem;
+        border-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+        // animation-name: mover;
+        // animation-duration: 1s;
+        // animation-direction: alternate;
+    }
+
+    input {
+        border-radius: 1rem;
+    }
+
+    input:hover {
+        border-radius: 2rem;
+        border-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .nav {
+        margin-left: auto;
+        margin-right: auto;
+        width: 96%;
+        margin-top: 4px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        margin-top: 4px;
+        padding-bottom: 50px;
+    }
+
+    li > .active {
+        color: white;
+        border-radius: 2rem;
+        border-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+        background: -webkit-linear-gradient(right, white, rgb(152, 152, 212));
+    }
+
+    #firstAnchor {
+        color: white;
+        border-radius: 2rem;
+        border-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    #secondAnchor {
+        color: blueviolet;
+        border-radius: 2rem;
+        border-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    // li {
+    //     border: none;
+    // }
+
+    // li > .inactive {
+    //     color: blueviolet;
+    //     border-radius: 2rem;
+    //     border-color: blueviolet;
+    //     border-width: 1px;
+    //     border-style: solid;
+    // }
+
+    form {
+       width: 100%;
+    }   
+
+    form > .btn {
+        border-radius: 2em;
+        background: -webkit-linear-gradient(right, white, rgb(152, 152, 212));
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    form > .btn:hover {
+        box-shadow: 0 0 4px 0 black;
+        // animation: mover 1s;
+        // animation-direction: forward;
+    }
+
+    label {
+        color: blueviolet;
+    }
+
+    .userSvg {
+        margin: 2px;
+        width: 100%;
+        padding: 1px;
+    }
+
+    .welcomNote {
+        width: 100%;
+        height: 49%;
+        display: flex;
+        padding-bottom: 2px;
+    }
+
+    .svgAnimation {
+        height: 49%;
+        display: flex;  
+        margin-bottom: 0%;
+    }
+
+    .userSvg > div > p {
+        color: white;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    .svgAnimation > svg{
+        color: white;
+        margin-left: 45%;
+        margin-right: 45%;
+        margin-top: 2px;
+        animation: svgMover 1s infinite alternate;
+    }
+
+    @keyframes svgMover {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(100%); }
+    }
+
+
+    // @keyframes mover {
+    //     0% {background: -webkit-linear-gradient(0deg, white 50%, rgb(90, 90, 224) 50%);}
+    //     4% {background: -webkit-linear-gradient(0deg, white 52%, rgb(90, 90, 224) 48%);}
+    //     8% {background: -webkit-linear-gradient(0deg, white 54%, rgb(90, 90, 224) 46%);}
+    //     12% {background: -webkit-linear-gradient(0deg, white 56%, rgb(90, 90, 224) 44%);}
+    //     16% {background: -webkit-linear-gradient(0deg, white 58%, rgb(90, 90, 224) 42%);}
+    //     20% {background: -webkit-linear-gradient(0deg, white 60%, rgb(90, 90, 224) 40%);}
+    //     24% {background: -webkit-linear-gradient(0deg, white 62%, rgb(90, 90, 224) 38%);}
+    //     28% {background: -webkit-linear-gradient(0deg, white 64%, rgb(90, 90, 224) 36%);}
+    //     32% {background: -webkit-linear-gradient(0deg, white 66%, rgb(90, 90, 224) 34%);}
+    //     36% {background: -webkit-linear-gradient(0deg, white 68%, rgb(90, 90, 224) 32%);}
+    //     40% {background: -webkit-linear-gradient(0deg, white 70%, rgb(90, 90, 224) 30%);}
+    //     44% {background: -webkit-linear-gradient(0deg, white 72%, rgb(90, 90, 224) 28%);}
+    //     48% {background: -webkit-linear-gradient(0deg, white 74%, rgb(90, 90, 224) 26%);}
+    //     52% {background: -webkit-linear-gradient(0deg, white 76%, rgb(90, 90, 224) 24%);}
+    //     56% {background: -webkit-linear-gradient(0deg, white 78%, rgb(90, 90, 224) 22%);}
+    //     60% {background: -webkit-linear-gradient(0deg, white 80%, rgb(90, 90, 224) 20%);}
+    //     64% {background: -webkit-linear-gradient(0deg, white 82%, rgb(90, 90, 224) 18%);}
+    //     68% {background: -webkit-linear-gradient(0deg, white 84%, rgb(90, 90, 224) 16%);}
+    //     72% {background: -webkit-linear-gradient(0deg, white 86%, rgb(90, 90, 224) 14%);}
+    //     76% {background: -webkit-linear-gradient(0deg, white 88%, rgb(90, 90, 224) 12%);}
+    //     80% {background: -webkit-linear-gradient(0deg, white 90%, rgb(90, 90, 224) 10%);}
+    //     84% {background: -webkit-linear-gradient(0deg, white 92%, rgb(90, 90, 224) 8%);}
+    //     88% {background: -webkit-linear-gradient(0deg, white 94%, rgb(90, 90, 224) 6%);}
+    //     92% {background: -webkit-linear-gradient(0deg, white 96%, rgb(90, 90, 224) 4%);}
+    //     96% {background: -webkit-linear-gradient(0deg, white 98%, rgb(90, 90, 224) 2%);} 
+    //     100% {background: -webkit-linear-gradient(0deg, white 100%, rgb(90, 90, 224) 0%);}        
+    // }
+
+    

@@ -1,0 +1,76 @@
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: -webkit-linear-gradient(0deg, white, rgb(152, 152, 212));
+    cursor: pointer;
+  }
+
+.w-100 {
+    width: 100%;
+    color: black;
+  }
+
+  .card {
+    display: none;
+    background: -webkit-linear-gradient(right, white, rgba(152, 152, 212, .2));
+    cursor: pointer;
+  }
+
+.block { 
+  margin-top: calc((100% - 50px)/2);
+  margin-bottom: calc((100% - 50px)/2);
+  margin: 20px;
+}
+
+.table-container {
+  padding-bottom: 55px;
+}
+
+// .matDialogClass {
+//   padding-bottom: 200px;
+// }
+
+.container {
+  display: none;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  padding-bottom: 50px;
+  // border-radius: 2rem;
+  // border-color: blueviolet;
+  // border-width: 2px;
+  // border-style: solid;
+}
+
+mat-card {
+  // padding: 5px;
+  // min-width: 500px;
+  height: 190px;
+  flex-basis: 150px;
+  // width: 300px;
+  // flex: 1 1 500;
+}
+
+mat-card > mat-card-title {
+  margin-top: 0px;
+  margin-bottom: 0.2px;
+  height: 10%;
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+  background: -webkit-linear-gradient(bottom, white, rgba(70, 70, 190, 0.4));
+}
+
+mat-card-content > img {
+  height: 100%;
+  width: 100%;
+}
+
+mat-card > mat-card-content {
+  background-color: aliceblue;  
+  text-align: center;
+  font-size: auto; 
+  height: 70%;
+}

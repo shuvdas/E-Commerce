@@ -1,0 +1,44 @@
+<div style="margin:auto; width:70%; margin-top:30px;height:40px">
+<app-search-bar (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
+</div>
+<h2 style="text-align:center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: italic;font-weight: 500;">Data</h2>
+
+<div class="table-container">
+<table mat-table id="shopTable" [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+<ng-container matColumnDef="Id">
+  <th mat-header-cell class="w-100" *matHeaderCellDef mat-sort-header>Id</th>
+  <td mat-cell class="w-100" *matCellDef="let element"> {{element.id}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Name">
+  <th mat-header-cell class="w-100" *matHeaderCellDef mat-sort-header>Name</th>
+  <td mat-cell class="w-100" *matCellDef="let element"> {{element.name}} </td>
+</ng-container>
+
+<ng-container matColumnDef="Title">
+  <th mat-header-cell class="w-100" *matHeaderCellDef mat-sort-header>Title</th>
+  <td mat-cell class="w-100" *matCellDef="let element"> {{element.title}} </td>
+</ng-container>
+
+<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+<mat-row *matRowDef="let row; columns : displayedColumns;" (click)="onRowClicked(row)"></mat-row>
+
+</table>
+</div>
+
+<div class="container">
+
+  <mat-card class="card block" (click)="onMatCardClicked($event)" *ngFor="let card of cards">
+    <mat-card-title>{{card.title}}
+    </mat-card-title><br>
+    <mat-card-content>
+    <img mat-card-image src="{{card.src}}" alt="Failed to Load">
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
